@@ -7,6 +7,7 @@
 ### 1. Homepage
 
 The homepage serves as the gateway to **LearningLoom**, providing an overview of the platform's key features and offerings. Users can easily navigate to other sections of the website from here.
+![Home](https://github.com/saranaeem1/LearningLoom/assets/98030008/88e908a7-4c28-41c0-8537-1fc13486ffab)
 
 ### 2. Courses Page
 
