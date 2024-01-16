@@ -10,13 +10,13 @@ import teacher1 from "../Assets/t1.jpg";
 import teacher2 from "../Assets/t2.jpg";
 import teacher3 from "../Assets/t3.jpg";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 
 import aboutusImage from "../Assets/aboutus.jpg";
 import "./page.css";
  
-
+const upTriangle = '\u25B2';
+  const downTriangle = '\u25BC'; 
 const FAQSection = ({ faqData }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -30,9 +30,10 @@ const FAQSection = ({ faqData }) => {
         <h1 className="title">Frequently Asked Questions</h1>
         <div className="FAQandImg_container">
           <div className="faq-img-container">
-            <img src={FaqImage} alt="" className="faq-img" />
+            {/* Your image component */}
           </div>
           <div className="faq-content">
+            {/* Map through faqData and render each question-answer pair */}
             {faqData.map((faq, index) => (
               <div key={index} className="question-answer">
                 <div className="question">
@@ -46,14 +47,14 @@ const FAQSection = ({ faqData }) => {
                         activeIndex === index ? "show-text" : ""
                       }`}
                     >
-                      <FontAwesomeIcon icon={faChevronUp} />
+                      {upTriangle}
                     </span>
                     <span
                       className={`down-icon ${
                         activeIndex !== index ? "show-text" : ""
                       }`}
                     >
-                      <FontAwesomeIcon icon={faChevronDown} />
+                      {downTriangle}
                     </span>
                   </button>
                 </div>
