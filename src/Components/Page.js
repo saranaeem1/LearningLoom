@@ -30,7 +30,7 @@ const FAQSection = ({ faqData }) => {
         <h1 className="title">Frequently Asked Questions</h1>
         <div className="FAQandImg_container">
           <div className="faq-img-container">
-            <img src={FaqImage} alt="" className="Faqimage" />
+            <img src={FaqImage} alt="" className="faq-img" />
           </div>
           <div className="faq-content">
        
