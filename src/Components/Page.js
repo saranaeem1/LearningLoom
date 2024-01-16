@@ -30,10 +30,10 @@ const FAQSection = ({ faqData }) => {
         <h1 className="title">Frequently Asked Questions</h1>
         <div className="FAQandImg_container">
           <div className="faq-img-container">
-            {/* Your image component */}
+            <img src={FaqImage} alt="" className="Faqimage" />
           </div>
           <div className="faq-content">
-            {/* Map through faqData and render each question-answer pair */}
+       
             {faqData.map((faq, index) => (
               <div key={index} className="question-answer">
                 <div className="question">
